@@ -130,14 +130,14 @@ h1{
     text-align: left;
   }
 
-  button {
+  .buttonEnvoyer {
     display: left;
-    margin: 5px 6px;
+    margin: 5px 63px;
     width: 25%;
     padding: 10px;
     font-size: 15px;
     background: #d0d0d5;
-    border: 3px solid orange;
+    border: 3px solid #FD6C9E;
   }
 
   footer {
