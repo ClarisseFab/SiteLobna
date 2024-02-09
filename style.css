@@ -1,0 +1,178 @@
+*{
+  margin: 0; 
+  padding: 0; 
+  text-decoration: none; 
+  list-style: none; 
+}
+
+body{
+  font-family: 'Bebas Neue'; 
+}
+
+header{
+  height: 12vh; 
+  width: 100vw; 
+  background: linear-gradient(to bottom right, #FD6C9E, 65%, blue); 
+  background-size: cover; 
+}
+
+.navbar{
+  position: absolute; 
+  padding: 25px; 
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.navbar, a{
+  color: white; 
+}
+
+.navbar .logo{
+  font-size: 2.2em; 
+  font-weight: bold; 
+}
+
+.navbar .nav-links ul{
+  display: flex; 
+}
+
+.navbar .nav-links ul li{
+  margin: 0 20px; 
+}
+
+
+h1{
+    color: #FD6C9E; 
+    text-align: center; 
+    font-size: 60px; 
+    padding: 20px; 
+  }
+  
+  p{
+    color: orange; 
+    text-align: center; 
+    font-size: 50px; 
+    font-weight: bold; 
+    padding: 20px; 
+  }
+ 
+
+  
+  .slider{
+    width: 80%; 
+    margin: 20px auto; 
+    position: relative; 
+  }
+  
+  .slider img{
+    width: 100%; 
+    height: auto; 
+  }
+
+  .slick-prev{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 150px; 
+    display:block; 
+    z-index: 2; 
+  }
+
+  .slick-next{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    right: 150px; 
+    display:block; 
+    z-index: 2;
+  }
+
+  .presentation, .photos{
+    padding: 30px;  
+  }
+
+  .photo{
+    width: 20%; 
+    border-radius: 10px;
+  }
+
+  section {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    max-width: 600px;
+  }
+
+  h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0px;
+    padding-top: 60px;
+  }
+
+  .info {
+    padding: 10px 0 0 5px;
+  }
+
+  .info label, .info input {
+    display: inline-block;
+  }
+
+  .info input {
+    width: 40%;
+    text-align: left;
+  }
+
+  .info label {
+    width: 5%;
+    min-width: 55px;
+    text-align: left;
+  }
+
+  button {
+    display: left;
+    margin: 5px 6px;
+    width: 25%;
+    padding: 10px;
+    font-size: 15px;
+    background: #d0d0d5;
+    border: 3px solid orange;
+  }
+
+  footer {
+    background-color: #FD6C9E; 
+    display: flex;
+    justify-content: center;
+  }
+
+  address {
+    text-align: center;
+    padding: 0.3em;
+    color: white; 
+  }
+
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
