@@ -6,6 +6,59 @@
         <title>LobnaTolba Photographie - Contact</title>
         <link href="https://fonts.cdnfonts.com/css/bebas-neue" rel="stylesheet"/>
         <link rel="stylesheet" href="style.css"/>
+
+
+        <script language="javascript">
+          imgPath = new Array;
+          SiClickGoTo = new Array;
+          version = navigator.appVersion.substring(0,1);
+          if (version >= 3)
+            {
+            i0 = new Image;
+            i0.src = 'Image0.jpg';
+            SiClickGoTo[0] = "https://www.pozzo-live.com/author/pdblobna/";
+            imgPath[0] = i0.src;
+            i1 = new Image;
+            i1.src = 'Image1.jpg';
+            SiClickGoTo[1] = "https://www.pozzo-live.com/author/pdblobna/";
+            imgPath[1] = i1.src;
+            i2 = new Image;
+            i2.src = 'Image2.jpg';
+            SiClickGoTo[2] = "https://www.pozzo-live.com/author/pdblobna/";
+            imgPath[2] = i2.src;
+            }
+          a = 0;
+          function StartAnim()
+            {
+            if (version >= 3)
+              {
+              document.write('<a href="#" onclick="ImgDest();return(false)"><img src="Image0.jpg" border="0" alt="Menu" name="defil" /></a>');
+              defilimg()
+              }
+            else
+              {
+              document.write('<a href="https://www.pozzo-live.com/author/pdblobna/"><img src="url_image0" border="0" /></a>')
+              }
+            }
+          function ImgDest()
+            {
+            document.location.href = SiClickGoTo[a-1];
+            }
+          function defilimg()
+            {
+            if (a == 3)
+              {
+              a = 0;
+              }
+            if (version >= 3)
+              {
+              document.defil.src = imgPath[a];
+              tempo3 = setTimeout("defilimg()",5000);
+              a++;
+              }
+            }
+          </script>
+
     </head>
         <header>
             <nav class="navbar">
@@ -20,7 +73,12 @@
             </nav>
             </header>
   <body>
-  <h1>MEILLEURES PHOTOS SANS HESITATION</h1>
+  <h1>Spécialiste de photos de concerts & soirées</h1>
+  <div class="animation">
+  <script language="javascript">
+    StartAnim();
+    </script>
+</div>
  <div class="slider">
    <div class="photo">
      <img src="https://i0.wp.com/www.pozzo-live.com/wp-content/uploads/2023/11/Explosion-In-the-Sky-3.jpg?w=1950&ssl=1" alt="image 1">
@@ -35,6 +93,7 @@
     <img src="https://i0.wp.com/www.pozzo-live.com/wp-content/uploads/2023/08/Chateau-Sonic-30.jpg?w=900&ssl=1" alt="image 4">
    </div>
   </div>
+
   </body>
   <footer>
     <address>
